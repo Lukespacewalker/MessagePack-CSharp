@@ -1,4 +1,5 @@
 ﻿#if NETSTANDARD
+#if !NET_NATIVE
 using MessagePack.Formatters;
 
 namespace MessagePack.Resolvers
@@ -54,4 +55,5 @@ namespace MessagePack.Resolvers
         }
     }
 }
+#endif
 #endif

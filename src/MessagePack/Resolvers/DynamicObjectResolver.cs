@@ -1,5 +1,5 @@
 ﻿#if !UNITY_WSA
-
+#if !NET_NATIVE
 using System;
 using System.Linq;
 using MessagePack.Formatters;
@@ -1784,5 +1784,5 @@ typeof(int), typeof(int) });
         }
     }
 }
-
+#endif
 #endif

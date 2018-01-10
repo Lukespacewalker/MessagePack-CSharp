@@ -1,5 +1,5 @@
 ﻿#if NETSTANDARD
-
+#if !NET_NATIVE
 using MessagePack.Internal;
 using System;
 using System.Collections;
@@ -330,5 +330,5 @@ namespace MessagePack.Formatters
     }
 
 }
-
+#endif
 #endif

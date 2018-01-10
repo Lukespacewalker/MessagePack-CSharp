@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+
+#if !NET_NATIVE
 using System.Linq;
 using MessagePack.Formatters;
 using MessagePack.Internal;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading;
 
@@ -479,7 +481,7 @@ namespace MessagePack.Resolvers
 
 #endif
 }
-
+#endif
 namespace MessagePack.Internal
 {
     // RuntimeTypeHandle can embed directly by OpCodes.Ldtoken

@@ -1,4 +1,5 @@
-﻿using MessagePack.Formatters;
+﻿#if !NET_NATIVE
+using MessagePack.Formatters;
 using MessagePack.Internal;
 using MessagePack.LZ4;
 using System;
@@ -290,3 +291,4 @@ namespace MessagePack
         }
     }
 }
+#endif

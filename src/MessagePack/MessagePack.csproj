@@ -19,7 +19,7 @@
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
         <DocumentationFile>bin\Release\netstandard2.0\MessagePack.xml</DocumentationFile>
         <NoWarn>1701;1702;1705;1591</NoWarn>
-        <DefineConstants>TRACE;RELEASE;NETSTANDARD;ENABLE_UNSAFE_MSGPACK;</DefineConstants>
+        <DefineConstants>TRACE;RELEASE;NETSTANDARD;ENABLE_UNSAFE_MSGPACK;NET_NATIVE;RELEASE;NETSTANDARD1_6</DefineConstants>
         <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
         <LangVersion>7</LangVersion>
     </PropertyGroup>

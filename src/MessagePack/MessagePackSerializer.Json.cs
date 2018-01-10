@@ -1,4 +1,5 @@
-﻿using MessagePack.Formatters;
+﻿#if !NET_NATIVE
+using MessagePack.Formatters;
 using MessagePack.Internal;
 using System;
 using System.Globalization;
@@ -360,3 +361,4 @@ namespace MessagePack
         }
     }
 }
+#endif

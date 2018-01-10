@@ -1,5 +1,5 @@
 ﻿#if !UNITY_WSA
-
+#if !NET_NATIVE
 using MessagePack.Formatters;
 using MessagePack.Internal;
 using System;
@@ -56,5 +56,5 @@ namespace MessagePack.Resolvers
         }
     }
 }
-
+#endif
 #endif

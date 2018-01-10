@@ -1,5 +1,5 @@
 ﻿#if NETSTANDARD
-
+#if !NET_NATIVE
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -106,5 +106,5 @@ namespace MessagePack
         }
     }
 }
-
+#endif
 #endif

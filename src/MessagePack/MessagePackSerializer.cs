@@ -18,11 +18,12 @@ namespace MessagePack
         {
             get
             {
+#if !NET_NATIVE
                 if (defaultResolver == null)
                 {
                     defaultResolver = MessagePack.Resolvers.StandardResolver.Instance;
                 }
-
+#endif
                 return defaultResolver;
             }
         }

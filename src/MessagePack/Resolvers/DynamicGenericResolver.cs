@@ -1,5 +1,5 @@
 ﻿#if !UNITY_WSA
-
+#if !NET_NATIVE
 using MessagePack.Formatters;
 using System.Linq;
 using MessagePack.Internal;
@@ -299,5 +299,5 @@ namespace MessagePack.Internal
         }
     }
 }
-
+#endif
 #endif

@@ -1,5 +1,5 @@
 ﻿#if !UNITY_WSA
-
+#if !NET_NATIVE
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -73,5 +73,5 @@ namespace MessagePack.Internal
 #endif
     }
 }
-
+#endif
 #endif

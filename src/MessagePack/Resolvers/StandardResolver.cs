@@ -1,4 +1,5 @@
-﻿using MessagePack.Formatters;
+﻿#if !NET_NATIVE
+using MessagePack.Formatters;
 using System.Linq;
 using MessagePack.Internal;
 using MessagePack.Resolvers;
@@ -351,3 +352,4 @@ namespace MessagePack.Internal
         }
     }
 }
+#endif
